@@ -4,6 +4,7 @@ import Images from '../../constants/Images';
 import Colors from '../../constants/Colors';
 import SearchBar from 'react-native-dynamic-search-bar';
 import Heading from '../../components/Reuseable/Heading';
+import ImageStories from '../../components/Image/ImageStories';
 
 const HomeScreen = () => {
   return (
@@ -37,6 +38,8 @@ const HomeScreen = () => {
       </View>
       {/* fav */}
       <Heading fontSize={20}>Stories</Heading>
+      {/* Stories */}
+      <ImageStories />
     </View>
   );
 };
