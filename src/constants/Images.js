@@ -1,4 +1,5 @@
 export default IMAGES = {
+  Logo: require('../assets/images/logo.png'),
   Avatar1: require('../assets/images/a1.png'),
   Avatar2: require('../assets/images/a2.jpeg'),
   Avatar3: require('../assets/images/a3.jpg'),

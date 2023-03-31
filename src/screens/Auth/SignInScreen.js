@@ -7,12 +7,15 @@ import Description from '../../components/Reuseable/Description';
 import Heading from '../../components/Reuseable/Heading';
 import NavigationStrings from '../../constants/NavigationStrings';
 import Colors from '../../constants/Colors';
+import AppLogo from '../../components/Image/AppLogo';
 
 const SignInScreen = () => {
   const navigation = useNavigation();
   return (
     <ScrollView style={styles.container}>
       <View>
+        {/* logo */}
+        <AppLogo />
         {/* heading */}
         <Heading color={Colors.Black} fontSize={24} icon>
           Hi, Welcome Back!

@@ -7,11 +7,14 @@ import Colors from '../../constants/Colors';
 import HaveAccount from '../../components/Reuseable/HaveAccount';
 import {useNavigation} from '@react-navigation/native';
 import NavigationStrings from '../../constants/NavigationStrings';
+import AppLogo from '../../components/Image/AppLogo';
 
 const ForgotPasswordScreen = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
+      {/* logo */}
+      <AppLogo />
       {/* heading */}
       <Heading color={Colors.Black} fontSize={24}>
         Forgot Password!

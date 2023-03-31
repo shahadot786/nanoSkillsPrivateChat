@@ -1,4 +1,4 @@
-import {View, StyleSheet, ScrollView} from 'react-native';
+import {View, StyleSheet, ScrollView, Image} from 'react-native';
 import React from 'react';
 import Colors from '../../constants/Colors';
 import Heading from '../../components/Reuseable/Heading';
@@ -7,12 +7,16 @@ import SignUpForm from '../../components/Form/SignUpForm';
 import HaveAccount from '../../components/Reuseable/HaveAccount';
 import {useNavigation} from '@react-navigation/native';
 import NavigationStrings from '../../constants/NavigationStrings';
+import Images from '../../constants/Images';
+import AppLogo from '../../components/Image/AppLogo';
 
 const SignUpScreen = () => {
   const navigation = useNavigation();
   return (
     <ScrollView style={styles.container}>
       <View>
+        {/* Logo */}
+        <AppLogo />
         {/* heading */}
         <Heading color={Colors.Black} fontSize={24}>
           Create Account
