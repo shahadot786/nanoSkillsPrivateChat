@@ -16,18 +16,11 @@ const ResetPasswordForm = () => {
   const pwd = watch('password');
   const [isLoading, setIsLoading] = useState(false);
 
-  // const onSignUpPressed = async data => {
-  //   setIsLoading(true);
-  //   setIsLoggedIn(true);
-  //   const {name, email, phone, password, passwordConfirmation} = data;
-  //   try {
-  //     await register(name, email, phone, password, passwordConfirmation);
-  //     navigation.replace(RouteName.bottomTab);
-  //   } catch (error) {
-  //     console.log(error.message);
-  //   }
-  //   setIsLoading(false);
-  // };
+  const onCreatePassword = async data => {
+    setIsLoading(true);
+    navigation.navigate(NavigationStrings.OtpScreen);
+    setIsLoading(false);
+  };
   //end method
 
   return (
@@ -44,12 +37,12 @@ const ResetPasswordForm = () => {
         secureTextEntry
         rules={{
           required: 'Password is required',
-          pattern: {
-            value:
-              /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])[A-Za-z\d!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]{6,}$/i,
-            message:
-              'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character',
-          },
+          // pattern: {
+          //   value:
+          //     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])[A-Za-z\d!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]{6,}$/i,
+          //   message:
+          //     'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character',
+          // },
           minLength: {
             value: 6,
             message: 'Password should minimum 6 characters long',
@@ -72,7 +65,7 @@ const ResetPasswordForm = () => {
         <CustomButton
           backgroundColor={Colors.Primary}
           color={Colors.White}
-          onPress={handleSubmit()}>
+          onPress={handleSubmit(onCreatePassword)}>
           Change Password
         </CustomButton>
       </View>

@@ -78,12 +78,12 @@ const SignInForm = () => {
         secureTextEntry
         rules={{
           required: 'Password is required',
-          pattern: {
-            value:
-              /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])[A-Za-z\d!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]{6,}$/i,
-            message:
-              'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character',
-          },
+          // pattern: {
+          //   value:
+          //     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])[A-Za-z\d!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]{6,}$/i,
+          //   message:
+          //     'Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character',
+          // },
           minLength: {
             value: 6,
             message: 'Password should minimum 6 characters long',
