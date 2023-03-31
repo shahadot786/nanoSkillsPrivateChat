@@ -5,6 +5,7 @@ import Colors from '../../constants/Colors';
 import SearchBar from 'react-native-dynamic-search-bar';
 import Heading from '../../components/Reuseable/Heading';
 import ImageStories from '../../components/Image/ImageStories';
+import ChatItem from '../../components/Home/ChatItem';
 
 const HomeScreen = () => {
   return (
@@ -40,6 +41,8 @@ const HomeScreen = () => {
       <Heading fontSize={20}>Stories</Heading>
       {/* Stories */}
       <ImageStories />
+      {/* chat */}
+      <ChatItem />
     </View>
   );
 };

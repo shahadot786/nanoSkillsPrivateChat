@@ -38,6 +38,26 @@ const ImageStories = () => {
       name: 'Rahena',
       image: Images.Female4,
     },
+    {
+      id: 6,
+      name: 'Shahadot',
+      image: Images.Male3,
+    },
+    {
+      id: 7,
+      name: 'Shamima',
+      image: Images.Female5,
+    },
+    {
+      id: 8,
+      name: 'Yeasear',
+      image: Images.Male4,
+    },
+    {
+      id: 9,
+      name: 'Galib',
+      image: Images.Male5,
+    },
   ];
   return (
     <View>
