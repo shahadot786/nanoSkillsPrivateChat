@@ -9,4 +9,7 @@ export default NavigationStrings = {
   //Home
   HomeScreen: 'HomeScreen',
   TabRoutes: 'BottomTabRoutes',
+  CallScreen: 'CallScreen',
+  MenuScreen: 'MenuScreen',
+  NotificationScreen: 'NotificationScreen',
 };

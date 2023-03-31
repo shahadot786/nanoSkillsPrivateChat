@@ -9,7 +9,7 @@ import MainStack from './MainStack';
 const Stack = createNativeStackNavigator();
 
 const Routes = () => {
-  const [loginStatus, setLoginStatus] = useState(false); //null
+  const [loginStatus, setLoginStatus] = useState(true); //null
 
   const dummyData = {
     data: {
