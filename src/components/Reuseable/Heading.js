@@ -3,7 +3,7 @@ import React from 'react';
 
 const Heading = ({children, color, fontSize, icon}) => {
   return (
-    <View>
+    <View style={{flexDirection: 'row', gap: 5}}>
       <Text style={[styles.heading, {fontSize: fontSize, color: color}]}>
         {children}
       </Text>

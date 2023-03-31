@@ -2,7 +2,7 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Colors from '../../constants/Colors';
 
-const HaveAccount = ({children, title, color, onPress}) => {
+const HaveAccount = ({children, title, color, onPress, textColor}) => {
   return (
     <View
       style={{
@@ -12,7 +12,7 @@ const HaveAccount = ({children, title, color, onPress}) => {
         justifyContent: 'center',
         marginTop: 10,
       }}>
-      <Text style={{color: Colors.Gray, fontSize: 15}}>{children}</Text>
+      <Text style={{color: textColor, fontSize: 15}}>{children}</Text>
       <TouchableOpacity activeOpacity={0.6} onPress={onPress}>
         <Text style={[styles.link, {color: color}]}>{title}</Text>
       </TouchableOpacity>

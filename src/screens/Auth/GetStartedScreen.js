@@ -25,7 +25,7 @@ const GetStartedScreen = () => {
       colors={['#38B48D', '#259E81', '#0D8173', '#03766F']}
       style={styles.linearGradient}>
       <SafeAreaView style={styles.container}>
-        <StatusBar backgroundColor="#38B48D" />
+        <StatusBar backgroundColor={Colors.Primary} />
         <ScrollView showsVerticalScrollIndicator={false}>
           {/*Image Component  */}
           <ImageRotateCom />
@@ -34,7 +34,7 @@ const GetStartedScreen = () => {
             Let's Get Started
           </Heading>
           {/* Description */}
-          <Description color={Colors.Gray} fontSize={15}>
+          <Description color={Colors.LightGray} fontSize={15}>
             Connect with each other with chatting or calling. Enjoy safe and
             private texting..
           </Description>
@@ -52,6 +52,7 @@ const GetStartedScreen = () => {
           {/* Have Account */}
           <HaveAccount
             title={'Login'}
+            textColor={Colors.LightGray}
             color={Colors.White}
             onPress={() => navigation.navigate(NavigationStrings.SignInScreen)}>
             Already have an account?
