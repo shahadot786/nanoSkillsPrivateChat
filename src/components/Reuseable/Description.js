@@ -17,6 +17,5 @@ const styles = StyleSheet.create({
   description: {
     lineHeight: 22,
     marginTop: 5,
-    paddingHorizontal: 15,
   },
 });

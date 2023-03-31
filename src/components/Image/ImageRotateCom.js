@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     transform: [{rotate: '10deg'}],
     position: 'absolute',
-    right: ScreenWidth - 120,
-    top: 180,
+    right: ScreenWidth - 140,
+    top: 170,
   },
   image4: {
     width: 200,

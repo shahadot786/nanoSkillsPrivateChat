@@ -66,6 +66,7 @@ const GetStartedScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingHorizontal: 20,
   },
   linearGradient: {
     flex: 1,

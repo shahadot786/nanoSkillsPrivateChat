@@ -17,6 +17,5 @@ const styles = StyleSheet.create({
   heading: {
     marginTop: 20,
     fontWeight: 'bold',
-    paddingHorizontal: 15,
   },
 });
