@@ -23,7 +23,7 @@ const TabRoutes = () => {
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
           // position: 'absolute',
-          backgroundColor: Colors.Black,
+          backgroundColor: Colors.Primary,
           // borderTopRightRadius: 10,
           // borderTopLeftRadius: 10,
           paddingHorizontal: 3,
